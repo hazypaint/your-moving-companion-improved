@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Your moving companion</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="greeting" class="greeting">Where do you want to live?</h1>
+                    <p >Enter the address you would like to visit:</p>
+                    <form id="form-container" class="form-container">
+                        <label for="street">Street:  </label><input type="text" id="street" value="">
+                        <label for="city">City:  </label><input type="text" id="city" value="">
+                        <button id="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8" "nytimes-container">
+                <h3 id="nytimes-header">New York Times Articles</h3>
+                <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
+            </div>
+            <div class="col-md-4" "wikipedia-container">
+                <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
+                <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+                <h3 id="streetview-header">Take a look at your new neighborhood</h3>
+                <p id="streetview-foto">Type in an address above and see a picture of google street view here!</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8" "nytimes-container">
+                <h3 id="google-header">Google Maps and Places</h3>
+                <div id="map" class="map">Want to know which other places are in your new neighborhood? Enter an address and hit submit and Google Maps will tell you here!</div>
+            </div>
+            <div class="col-md-4" "streetview-container">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <footer>
+                    <p>Posted by: Stefanie Schwaiger; created by instructions from (c)Udacity</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div id="map-container" class= "map-container"></div>
+
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+   
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body> 
